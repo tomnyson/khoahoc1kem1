@@ -1,0 +1,213 @@
+/* Bootstrap CSS framework is imported in index.tsx */
+
+:root {
+  --font-size: 14px;
+  --background: #fefdfb;
+  --foreground: #2d1810;
+  --card: #ffffff;
+  --card-foreground: #2d1810;
+  --popover: #ffffff;
+  --popover-foreground: #2d1810;
+  --primary: #8B4513;
+  --primary-foreground: #ffffff;
+  --secondary: #228B22;
+  --secondary-foreground: #ffffff;
+  --muted: #f5f3f0;
+  --muted-foreground: #6b5b4f;
+  --accent: #FF6347;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: rgba(139, 69, 19, 0.15);
+  --input: transparent;
+  --input-background: #f8f6f3;
+  --switch-background: #d4af98;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #8B4513;
+  --chart-1: #8B4513;
+  --chart-2: #228B22;
+  --chart-3: #FF6347;
+  --chart-4: #4169E1;
+  --chart-5: #DAA520;
+  --radius: 0.625rem;
+  --sidebar: #fefdfb;
+  --sidebar-foreground: #2d1810;
+  --sidebar-primary: #8B4513;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5f3f0;
+  --sidebar-accent-foreground: #2d1810;
+  --sidebar-border: rgba(139, 69, 19, 0.1);
+  --sidebar-ring: #8B4513;
+  
+  /* Dak Lak inspired colors */
+  --coffee-brown: #8B4513;
+  --forest-green: #228B22;
+  --highland-orange: #FF6347;
+  --sky-blue: #4169E1;
+  --golden-yellow: #DAA520;
+  --earth-red: #CD853F;
+}
+
+.dark {
+  --background: #1a0f0a;
+  --foreground: #f5f3f0;
+  --card: #2d1810;
+  --card-foreground: #f5f3f0;
+  --popover: #2d1810;
+  --popover-foreground: #f5f3f0;
+  --primary: #D2691E;
+  --primary-foreground: #1a0f0a;
+  --secondary: #32CD32;
+  --secondary-foreground: #1a0f0a;
+  --muted: #3d2517;
+  --muted-foreground: #a68b7a;
+  --accent: #FF7F50;
+  --accent-foreground: #1a0f0a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f5f3f0;
+  --border: rgba(210, 105, 30, 0.15);
+  --input: #3d2517;
+  --ring: #D2691E;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #D2691E;
+  --chart-2: #32CD32;
+  --chart-3: #FF7F50;
+  --chart-4: #6495ED;
+  --chart-5: #F0E68C;
+  --sidebar: #2d1810;
+  --sidebar-foreground: #f5f3f0;
+  --sidebar-primary: #D2691E;
+  --sidebar-primary-foreground: #1a0f0a;
+  --sidebar-accent: #3d2517;
+  --sidebar-accent-foreground: #f5f3f0;
+  --sidebar-border: rgba(210, 105, 30, 0.15);
+  --sidebar-ring: #D2691E;
+  
+  /* Dak Lak inspired colors - dark mode */
+  --coffee-brown: #D2691E;
+  --forest-green: #32CD32;
+  --highland-orange: #FF7F50;
+  --sky-blue: #6495ED;
+  --golden-yellow: #F0E68C;
+  --earth-red: #DEB887;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom Dak Lak colors */
+  --color-coffee-brown: var(--coffee-brown);
+  --color-forest-green: var(--forest-green);
+  --color-highland-orange: var(--highland-orange);
+  --color-sky-blue: var(--sky-blue);
+  --color-golden-yellow: var(--golden-yellow);
+  --color-earth-red: var(--earth-red);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}

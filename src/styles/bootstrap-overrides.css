@@ -1,0 +1,556 @@
+/* Bootstrap overrides and custom styles */
+
+/* Custom CSS variables for the Dak Lak theme */
+:root {
+  --coffee-brown: #1D582C;
+  --forest-green: #228B22;
+  --highland-orange: #FF6347;
+  --sky-blue: #4169E1;
+  --golden-yellow: #DAA520;
+  --earth-red: #CD853F;
+}
+
+/* Bootstrap component overrides */
+.btn-primary {
+  background-color: var(--coffee-brown) !important;
+  border-color: var(--coffee-brown) !important;
+  box-shadow: 0 0.125rem 0.5rem rgba(29, 88, 44, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: #174721 !important;
+  border-color: #174721 !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(29, 88, 44, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-primary:focus {
+  background-color: #174721 !important;
+  border-color: #174721 !important;
+  box-shadow: 0 0 0 0.25rem rgba(29, 88, 44, 0.25) !important;
+}
+
+.btn-success {
+  background-color: var(--forest-green) !important;
+  border-color: var(--forest-green) !important;
+}
+
+.btn-success:hover {
+  background-color: #1e7a1e !important;
+  border-color: #1e7a1e !important;
+}
+
+/* Navbar overrides */
+.navbar-brand {
+  color: var(--coffee-brown) !important;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+  border: 2px solid var(--coffee-brown);
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+  border-color: var(--highland-orange);
+}
+
+.navbar-nav .nav-link {
+  color: #6c757d !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--coffee-brown) !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(29, 88, 44, 0.25);
+}
+
+/* Card enhancements */
+.card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Text color utilities */
+.text-coffee-brown {
+  color: var(--coffee-brown) !important;
+}
+
+.text-forest-green {
+  color: var(--forest-green) !important;
+}
+
+.text-highland-orange {
+  color: var(--highland-orange) !important;
+}
+
+.text-sky-blue {
+  color: var(--sky-blue) !important;
+}
+
+.text-golden-yellow {
+  color: var(--golden-yellow) !important;
+}
+
+.text-earth-red {
+  color: var(--earth-red) !important;
+}
+
+/* Background utilities */
+.bg-coffee-brown {
+  background-color: var(--coffee-brown) !important;
+}
+
+.bg-forest-green {
+  background-color: var(--forest-green) !important;
+}
+
+.bg-highland-orange {
+  background-color: var(--highland-orange) !important;
+}
+
+.bg-sky-blue {
+  background-color: var(--sky-blue) !important;
+}
+
+.bg-golden-yellow {
+  background-color: var(--golden-yellow) !important;
+}
+
+.bg-earth-red {
+  background-color: var(--earth-red) !important;
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-custom {
+  background: linear-gradient(135deg, rgba(29, 88, 44, 0.05), rgba(34, 139, 34, 0.05));
+}
+
+.bg-gradient-orange-blue {
+  background: linear-gradient(135deg, rgba(255, 99, 71, 0.1), rgba(65, 105, 225, 0.1));
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Custom button styles */
+.btn-custom-primary {
+  background-color: var(--coffee-brown);
+  border-color: var(--coffee-brown);
+  color: white;
+  box-shadow: 0 0.125rem 0.5rem rgba(29, 88, 44, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-custom-primary:hover {
+  background-color: #174721;
+  border-color: #174721;
+  color: white;
+  box-shadow: 0 0.25rem 0.75rem rgba(29, 88, 44, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Custom large button */
+.btn-lg-custom {
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+  
+  .display-5 {
+    font-size: 2rem !important;
+  }
+  
+  .display-6 {
+    font-size: 1.75rem !important;
+  }
+  
+  .btn-lg-custom {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Icon styling */
+.lucide {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+/* Custom spacing utilities */
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+.py-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Hero section specific styles */
+.hero-bg {
+  background: linear-gradient(135deg, rgba(29, 88, 44, 0.03), rgba(34, 139, 34, 0.03));
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Section divider */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, var(--highland-orange), var(--sky-blue));
+  margin: 3rem auto;
+  max-width: 100px;
+  border-radius: 1px;
+}
+
+/* Enhanced shadows */
+.shadow-soft {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Badge styling */
+.badge-custom {
+  background-color: rgba(29, 88, 44, 0.1);
+  color: var(--coffee-brown);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+}
+
+/* Custom alert styling */
+.alert-custom {
+  background-color: rgba(34, 139, 34, 0.1);
+  border: 1px solid rgba(34, 139, 34, 0.2);
+  color: var(--forest-green);
+  border-radius: 0.5rem;
+}
+
+/* Form control focus states */
+.form-control:focus {
+  border-color: var(--coffee-brown);
+  box-shadow: 0 0 0 0.25rem rgba(29, 88, 44, 0.25);
+}
+
+/* Custom list styling */
+.list-check {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-check li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.list-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--forest-green);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Testimonial specific styles */
+.testimonial-card {
+  border-left: 4px solid var(--coffee-brown);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer styling */
+.footer-bg {
+  background-color: #2d1810;
+  color: #f5f3f0;
+}
+
+.footer-bg a {
+  color: #f5f3f0;
+  text-decoration: none;
+}
+
+.footer-bg a:hover {
+  color: var(--highland-orange);
+}
+
+/* Utility for text gradients */
+.text-gradient {
+  background: linear-gradient(135deg, var(--highland-orange), var(--sky-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for accessibility */
+button:focus,
+a:focus,
+.btn:focus {
+  outline: 2px solid var(--coffee-brown);
+  outline-offset: 2px;
+}
+
+/* Enhanced CTA button hover effects */
+.btn-lg:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0.5rem 2rem rgba(29, 88, 44, 0.4) !important;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 80px; /* Account for fixed header */
+}
+
+/* Navigation active state enhancements */
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #1D582C, #228B22);
+  border-radius: 2px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 30px;
+    opacity: 1;
+  }
+}
+
+/* Section fade-in animations */
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.section-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animations for cards */
+.card-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.card-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-animate:nth-child(1) { transition-delay: 0.1s; }
+.card-animate:nth-child(2) { transition-delay: 0.2s; }
+.card-animate:nth-child(3) { transition-delay: 0.3s; }
+.card-animate:nth-child(4) { transition-delay: 0.4s; }
+
+/* Enhanced navbar styling */
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA section animations */
+.cta-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 88, 44, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(29, 88, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 88, 44, 0);
+  }
+}
+
+/* Mobile-first responsive typography */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem !important;
+  }
+  
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Contact Widget Pulse Animation */
+@keyframes contactPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Enhanced contact widget styling */
+.contact-widget-option {
+  transform: translateY(10px);
+  opacity: 0;
+  animation: slideUp 0.3s ease forwards;
+}
+
+.contact-widget-option:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.contact-widget-option:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.contact-widget-option:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Contact button hover effects */
+.contact-option-btn:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Mobile contact bar styling */
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 70px; /* Space for mobile contact bar */
+  }
+}
+
+/* Social Proof Toast Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+/* Toast notification styling */
+.toast-notification {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.toast-notification.fade-out {
+  animation: fadeOut 0.3s ease-in forwards;
+}
