@@ -35,8 +35,10 @@ export default function App() {
   const [currentToast, setCurrentToast] = useState({ name: '', action: '', package: '', time: '', location: '' });
   const [activeSection, setActiveSection] = useState('home');
   
-  // SEO and structured data
-  const canonicalUrl = typeof window !== "undefined" ? window.location.href : "https://edukistaynguyen.com/";
+    // SEO and Meta Configuration
+  const siteTitle = "EduKid Stay Nguyen - Khóa học IT thực chiến";
+  const siteDescription = "Khóa học IT chuyên sâu với phương pháp thực chiến. Học lập trình, thiết kế web, và kỹ năng công nghệ với giảng viên giàu kinh nghiệm.";
+  const canonicalUrl = typeof window !== "undefined" ? window.location.href : "https://edukidstaynguyen.com/";
   
   const structuredData = {
     "@context": "https://schema.org",
@@ -381,14 +383,6 @@ export default function App() {
               >
                 Đăng ký ngay
               </button>
-              <a
-                href="https://edukistaynguyen.com"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline-secondary"
-              >
-                Website
-              </a>
             </div>
           </div>
         </div>
@@ -762,7 +756,7 @@ export default function App() {
                       </a>
                       
                       <a 
-                        href="https://edukistaynguyen.com" 
+                        href="https://edukidstaynguyen.com" 
                         target="_blank" 
                         rel="noreferrer" 
                         className="btn btn-outline-success btn-lg px-5 py-3"
@@ -1077,7 +1071,7 @@ export default function App() {
                 <span>0349 528 472</span>
               </a>
               <a
-                href="https://edukistaynguyen.com"
+                href="https://edukidstaynguyen.com"
                 className="btn btn-sm rounded-pill"
                 style={{backgroundColor: 'rgba(34, 139, 34, 0.1)', color: '#228B22', border: 'none'}}
               >
